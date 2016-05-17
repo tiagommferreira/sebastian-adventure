@@ -135,7 +135,7 @@ public class CharacterInventory : MonoBehaviour {
 				PickableObjectBehaviour temp = ((PickableObjectBehaviour)inventoryObjectsPickable [0]);
 				pickedObjectTexture = temp.objTexture; //sets texture to appear
 				pickedObjectRect = new Rect(temp.pickedObjX,temp.pickedObjY,temp.pickedObjWidth,temp.PickedObjHeight);
-			}catch(System.Exception e) {
+			}catch(System.Exception) {
 				picked = false;
 			}
 

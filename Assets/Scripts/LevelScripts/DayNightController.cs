@@ -16,6 +16,9 @@ public class DayNightController : MonoBehaviour {
 	[Range(0,1)]
 	public float currentTimeOfDay = 0f;
 
+	public float getCurrentTime() {
+		return currentTimeOfDay;
+	}
 	// A multiplier other scripts can use to speed up and slow down the passing of time.
 	[HideInInspector]
 	public float timeMultiplier = 1f;

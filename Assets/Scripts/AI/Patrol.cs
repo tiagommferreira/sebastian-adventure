@@ -6,12 +6,10 @@ public class Patrol : MonoBehaviour {
     public Vector3[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
-    Animator anim;
 
     // Use this for initialization
     void Start () {
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
 
         // Disabling auto-braking allows for continuous movement
         // between points (ie, the agent doesn't slow down as it
